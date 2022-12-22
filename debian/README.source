@@ -1,0 +1,4 @@
+The data/*.rda files contains non-generated datasets. More details can be found
+under the respective man/*.Rd files.
+
+ -- Sébastien Villemot <sebastien@debian.org>, Sat, 30 Sep 2017 10:51:37 +0200

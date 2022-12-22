@@ -1,0 +1,29 @@
+Source: r-cran-vcd
+Maintainer: Debian R Packages Maintainers <r-pkg-team@alioth-lists.debian.net>
+Uploaders: Andreas Tille <tille@debian.org>
+Section: gnu-r
+Testsuite: autopkgtest-pkg-r
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-r,
+               r-base-dev,
+               r-cran-mass,
+               r-cran-colorspace,
+               r-cran-lmtest
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/r-pkg-team/r-cran-vcd
+Vcs-Git: https://salsa.debian.org/r-pkg-team/r-cran-vcd.git
+Homepage: https://cran.r-project.org/package=vcd
+Rules-Requires-Root: no
+
+Package: r-cran-vcd
+Architecture: all
+Depends: ${R:Depends},
+         ${misc:Depends}
+Recommends: ${R:Recommends}
+Suggests: ${R:Suggests}
+Description: GNU R Visualizing Categorical Data
+ Visualization techniques, data sets, summary and inference procedures
+ aimed particularly at categorical data. Special emphasis is given to
+ highly extensible grid graphics. The package was inspired by the book
+ "Visualizing Categorical Data" by Michael Friendly.

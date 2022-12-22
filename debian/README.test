@@ -1,0 +1,10 @@
+Notes on how this package can be tested.
+────────────────────────────────────────
+
+To run the unit tests provided by the package you can do
+
+   sh  run-unit-test
+
+in this directory.
+
+ -- Andreas Tille <tille@debian.org>  Fri, 20 Jun 2014 15:25:06 +0200

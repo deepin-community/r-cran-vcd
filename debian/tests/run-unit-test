@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+pkg=r-cran-vcd
+if [ "$AUTOPKGTEST_TMP" = "" ] ; then
+  AUTOPKGTEST_TMP=`mktemp -d /tmp/${pkg}-test.XXXXXX`
+fi
+cd $AUTOPKGTEST_TMP
+cp /usr/share/doc/${pkg}/tests/* $AUTOPKGTEST_TMP
+find . -name "*.gz" -exec gzip \{\} \;
+for runtest in `ls *.R` ; do
+    R --no-save < $runtest
+done
+rm -f $AUTOPKGTEST_TMP/*
